@@ -1,7 +1,3 @@
-Claro! Aqui está um exemplo de README para o projeto React chamado URLGenius, focado no controle de URLs:
-
----
-
 # URLGenius
 
 URLGenius é uma aplicação React para o gerenciamento e controle de URLs.
@@ -67,6 +63,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, rela
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
----
-
-Este README fornece uma visão geral do projeto URLGenius, incluindo instruções de instalação, uso, contribuição e informações sobre a licença. Você pode personalizar e expandir conforme necessário para se adequar ao seu projeto específico.
