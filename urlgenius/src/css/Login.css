@@ -6,7 +6,7 @@
 
 .login-left {
     flex: 1;
-    background-color: #00bcd4;
+    background-color: #00B4CB;
     color: white;
     display: flex;
     flex-direction: column;
@@ -78,6 +78,7 @@
 }
 
 .contact {
+    color: #828181;
     text-align: center;
     margin-top: 20px;
 }

@@ -41,7 +41,9 @@ const Login = () => {
         <div className="login-container">
             <div className="login-left">
                 <div className="login-logo">Logo</div>
-                <h2>Bem Vindo</h2>
+                <Typography component="h1" variant="h5" sx={{ textAlign: 'center', fontSize: '3rem' }}>
+                    Bem Vindo      
+                </Typography>
                 <p>Você está no URL Genius.</p>
             </div>
             <div className="login-right">
@@ -91,16 +93,25 @@ const Login = () => {
                                 ),
                             }}
                         />
-                    <div className="form-group">
-                        <input type="checkbox" id="remember" />
-                        <label htmlFor="remember">Lembrar de mim</label>
-                        <a href="/forgot-password" className="forgot-password">Esqueceu sua senha?</a>
-                    </div>
+                        <Grid container alignItems="center" justifyContent="space-between">
+                            <Grid item>
+                                <FormControlLabel
+                                    control={<Checkbox value="remember" color="primary" />}
+                                    label="Lembrar de mim"
+                                />
+                            </Grid>
+                            <Grid item>
+                                <Link href="/forgot-password" variant="body2">
+                                    Esqueceu sua senha?
+                                </Link>
+                            </Grid>
+                        </Grid>
                     <Button
                         type="submit"
                         fullWidth
                         variant="contained"
                         sx={{ mt: 3, mb: 2, backgroundColor: '#00B4CB', '&:hover': { backgroundColor: '#0099A8' } }}
+                        
                     >
                         Entrar
                     </Button>
