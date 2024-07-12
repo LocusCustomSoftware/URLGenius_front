@@ -40,7 +40,6 @@ const Login = () => {
     return (
         <div className="login-container">
             <div className="login-left">
-                <div className="login-logo">Logo</div>
                 <Typography component="h1" variant="h5" sx={{ textAlign: 'center', fontSize: '3rem' }}>
                     Bem Vindo      
                 </Typography>
