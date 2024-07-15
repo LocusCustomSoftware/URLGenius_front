@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import PasswordReset from './components/PasswordReset';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
             <Dashboard />
           </ProtectedRoute>
         } />
-        <Route path="*" element={<Navigate to="/login" />} />
+        <Route path="/reset-password/:uid/:token" element={<PasswordReset />} /> 
+        <Route path="*" element={<Login />} />
       </Routes>
     </Router>
   );
