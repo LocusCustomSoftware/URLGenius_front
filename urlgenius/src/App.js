@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import PasswordReset from './components/PasswordReset';
 import ProtectedRoute from './components/ProtectedRoute';
+import CreateUser from './components/CreateUsers';
 
 function App() {
   return (
@@ -17,6 +18,12 @@ function App() {
         } />
         <Route path="/reset-password/:uid/:token" element={<PasswordReset />} /> 
         <Route path="*" element={<Login />} />
+        <Route path="/create-user" element={
+          <ProtectedRoute>
+            <CreateUser />
+          </ProtectedRoute>
+        } />
+        <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </Router>
   );
