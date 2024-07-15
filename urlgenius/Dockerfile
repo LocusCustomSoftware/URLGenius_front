@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:15.8.0-alpine
+FROM node:22-bullseye-slim
 
 # set work directory
 WORKDIR /usr/src/app
