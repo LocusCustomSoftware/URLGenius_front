@@ -1,9 +1,14 @@
 /* Login.css */
+
+/* Container principal */
 .login-container {
     display: flex;
-    height: 100vh;
+    flex-direction: row;
+    min-height: 100vh;
+    padding: 0;
 }
 
+/* Lado esquerdo da tela de login */
 .login-left {
     flex: 1;
     background-color: #00B4CB;
@@ -15,11 +20,13 @@
     padding: 20px;
 }
 
+/* Logo no lado esquerdo */
 .login-logo {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
+/* Lado direito da tela de login */
 .login-right {
     flex: 1;
     display: flex;
@@ -28,28 +35,34 @@
     padding: 20px;
 }
 
+/* Formulário de login */
 .login-form {
     width: 100%;
     max-width: 400px;
 }
 
+/* Título do formulário */
 .login-form h2 {
     margin-bottom: 10px;
 }
 
+/* Parágrafo do formulário */
 .login-form p {
     margin-bottom: 20px;
 }
 
+/* Grupo de campos do formulário */
 .form-group {
     margin-bottom: 20px;
 }
 
+/* Label do grupo de campos */
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
 
+/* Campos de texto e senha */
 .form-group input[type="text"],
 .form-group input[type="password"] {
     width: 100%;
@@ -57,16 +70,19 @@
     margin-bottom: 10px;
 }
 
+/* Checkbox */
 .form-group input[type="checkbox"] {
     margin-right: 10px;
 }
 
+/* Link de "Esqueci minha senha" */
 .forgot-password {
     float: right;
     color: #00bcd4;
     text-decoration: none;
 }
 
+/* Botão de login */
 .login-button {
     width: 100%;
     padding: 10px;
@@ -77,18 +93,39 @@
     font-size: 16px;
 }
 
+/* Contato na parte inferior do formulário */
 .contact {
     color: #828181;
     text-align: center;
     margin-top: 20px;
 }
 
+/* Link de contato */
 .contact a {
     color: #00bcd4;
     text-decoration: none;
 }
 
+/* Mensagem de erro */
 .error {
     color: red;
     margin-bottom: 10px;
+}
+
+.login-content {
+    text-align: center; /* Centraliza o conteúdo do login */
+}
+
+.logo-image {
+    width: 150px; /* Tamanho da imagem */
+    height: auto; /* Mantém a proporção original */
+    margin-bottom: 20px; /* Espaço opcional abaixo da imagem */
+}
+
+.login-side-grid {
+    padding: 20px;
+    background-color: #00B4CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
