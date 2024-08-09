@@ -83,8 +83,9 @@ const Navbar = ({ user }) => {
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
           >
+            <MenuItem onClick={handleMenuClose} component={Link} to="/">Home</MenuItem>
             <MenuItem onClick={handleMenuClose} component={Link} to="/reset_password">Trocar minha senha</MenuItem>
-            <MenuItem onClick={handleMenuClose} component={Link} to="/add_user">Criar novo usuário</MenuItem>
+            <MenuItem onClick={handleMenuClose} component={Link} to="/user-area">Área de Usuários</MenuItem>
             <MenuItem onClick={handleMenuClose}>Sair</MenuItem>
           </Menu>
         </Toolbar>
