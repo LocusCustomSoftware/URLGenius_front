@@ -84,6 +84,7 @@ const Navbar = ({ user }) => {
             onClose={handleMenuClose}
           >
             <MenuItem onClick={handleMenuClose} component={Link} to="/">Home</MenuItem>
+            <MenuItem onClick={handleMenuClose} component={Link} to="/campaigns">Campanhas</MenuItem>
             <MenuItem onClick={handleMenuClose} component={Link} to="/reset_password">Trocar minha senha</MenuItem>
             <MenuItem onClick={handleMenuClose} component={Link} to="/user-area">Área de Usuários</MenuItem>
             <MenuItem onClick={handleMenuClose}>Sair</MenuItem>

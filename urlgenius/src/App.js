@@ -39,6 +39,9 @@ import UserArea from "./pages/Users/UserArea";
 import CreateUser from "./pages/Users/CreateUser";
 import UserManagement from "./pages/Users/UserManagement";
 import UserDetails from "./pages/Users/UserDetails";
+import Campaigns from "./pages/Campaings/Campaing";
+import NewCampaign from "./pages/Campaings/CreateCampaing";
+import CampaignCreation from "./pages/Campaings/CampaingChoiceCreate";
 
 function App() {
   return (
@@ -51,6 +54,9 @@ function App() {
               <Route index element={<Home />} />
               <Route path="/products/:id/info" element={<Info />} />
               <Route path="/campaigns/:campanhaId" element={<CampaignsTable />} />
+              <Route path="/campaigns" element={<Campaigns />} />
+              <Route path="/create-campaign" element={<NewCampaign />} />
+              <Route path="/campaing-choice" element={<CampaignCreation />} />
               <Route path="/reset_password" element={<ResetPassword />} />
               <Route path="/user-area" element={<UserArea />} />
               <Route path="/add_user" element={<AddUser />} />
