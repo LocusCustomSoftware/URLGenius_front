@@ -35,6 +35,10 @@ import CampaignsTable from './pages/CampaignsTable';
 import AddUser from './pages/AddUser';
 import ResetPassword from './pages/ResetPassword';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import UserArea from "./pages/Users/UserArea";
+import CreateUser from "./pages/Users/CreateUser";
+import UserManagement from "./pages/Users/UserManagement";
+import UserDetails from "./pages/Users/UserDetails";
 
 function App() {
   return (
@@ -48,7 +52,11 @@ function App() {
               <Route path="/products/:id/info" element={<Info />} />
               <Route path="/campaigns/:campanhaId" element={<CampaignsTable />} />
               <Route path="/reset_password" element={<ResetPassword />} />
+              <Route path="/user-area" element={<UserArea />} />
               <Route path="/add_user" element={<AddUser />} />
+              <Route path="/user-management" element={<UserManagement />} />
+              <Route path="/create-user" element={<CreateUser />} />
+              <Route path="/user-details/:id" element={<UserDetails />} />
               <Route path="*" element={<NotFound />} />
             </Route>
             <Route path="*" element={<Login />} />
